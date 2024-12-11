@@ -1,0 +1,243 @@
+#BG-img {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f8fc;
+  background-image: url("./images/BUE_logo.png");
+  background-position: center;
+  background-size: auto 95%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  opacity: 0.97;
+  transition: margin-top 0.3s ease;
+}
+
+.content.centered {
+  margin-top: 25vh;
+}
+
+.content.top {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #4A90E2;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.select-box {
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 2px solid #007BFF;
+  width: 60%;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.select-box:focus {
+  border-color: #0060FF;
+}
+
+.career-option {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.career-option:hover {
+  transform: scale(1.01);
+}
+
+.career-name {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.career-description,
+.career-skills {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.knowledgeHub-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.knowledgeHub-button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.knowledgeHub-button:active {
+  background: #003f7f;
+  transform: translateY(0);
+}
+
+.resource-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resource-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.no-options {
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.spinner {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #BG-img {
+    background-size: auto 70%;
+  }
+
+  .content {
+    padding: 20px;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .select-box {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .career-name {
+    font-size: 1.4rem;
+  }
+
+  .career-description, .career-skills {
+    font-size: 0.9rem;
+  }
+
+  .career-option {
+    padding: 15px;
+  }
+
+  .resource-button {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #BG-img {
+    background-size: auto 60%;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .select-box {
+    width: 90%;
+    font-size: 0.85rem;
+  }
+
+  .career-name {
+    font-size: 1.2rem;
+  }
+
+  .career-description, .career-skills {
+    font-size: 0.85rem;
+  }
+
+  .career-option {
+    padding: 10px;
+  }
+
+  .resource-button {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+}
