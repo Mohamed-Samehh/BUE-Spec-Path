@@ -94,28 +94,38 @@ Make sure you have the following installed:
 
 1. Clone the repository:
     ```
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
+    git clone https://github.com/Mohamed-Samehh/BUE-Spec-Path/
+    cd BUE-Spec-Path
     ```
 
-2. Install dependencies:
+2. Install dependencies in root folder:
     ```
     npm install
     ```
 
-3. Set up environment variables:
+3. Install dependencies in backend folder:
+    ```
+    cd backend
+    npm install
+    ```
+
+4. Set up environment variables:
    Create a `.env` file in the root directory and add your environment variables. Example:
-PORT=5000 DB_URI=mongodb+srv://your-mongo-connection-string JWT_SECRET=your-secret-key
+   ```
+   DB_URI=mongodb+srv://your-mongo-connection-string
+   JWT_SECRET=your-secret-key
+   PORT=5000
+   ```
 
-4. Start the application using `Nodemon` for backend auto-reload:
- ```bash
- npm run dev
- ```
+5. Start the backend using `Nodemon` from backend folder:
+   ```
+   cd backend
+   npm run dev
+   ```
 
- This will start both the frontend and backend simultaneously using **Vite** for the frontend and **Nodemon** for the backend.
+6. Start the application using `Vite` from root folder:
+   ```
+   npm run dev
+   ```
 
-### Frontend Setup
-For the frontend, follow these steps:
-1. Navigate to the root directory:
-```bash
-cd frontend
+ The frontend will be accessible at http://localhost:3000, and the backend API will be available at http://localhost:5000.
